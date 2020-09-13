@@ -1,0 +1,4 @@
+https://stackoverflow.com/
+https://github.com/ruby/ruby
+https://github.com/torvalds
+https://github.com/id-Software/Quake-III-Arena

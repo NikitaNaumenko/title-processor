@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'title/processor'
+
+links = if ARGV.empty?
+          acc = []
+          $stdin.each_line { |line| acc << line }
+          acc
+        else
+          filename = ARGV[0]
+          File.read(filename).split("\n")
+        end
+
+puts Title::Processor.process!(links)

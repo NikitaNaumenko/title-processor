@@ -5,7 +5,7 @@ require 'title/processor'
 
 links = if ARGV.empty?
           acc = []
-          $stdin.each_line { |line| acc << line }
+          $stdin.each_line { |line| acc << line.strip }
           acc
         else
           filename = ARGV[0]
